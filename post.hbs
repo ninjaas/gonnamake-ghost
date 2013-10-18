@@ -1,0 +1,44 @@
+{{!< default}} 
+{{! The comment above "< default" means - insert everything in this file into the {body} of the default.hbs template, which contains our header/footer. }} 
+<main class="content" role="main">
+    <article class="row">
+        <div class="row {{post_class}}">
+            <div class=" small-12 medium-9 cell">
+                {{! Everything inside the #post tags pulls data from the post }} 
+                {{#post}} 
+                {{! Everything below outputs content of the the post which has been published }}
+
+                <h1>{{{title}}}</h1>
+                <span class="post-meta">
+                    <time datetime="{{date format=" YYYY-MM-DD "}}">{{date format='DD MMM YYYY'}}</time>{{#if tags}}on {{tags separator=" | "}}{{/if}}</span>
+                    <section class="post-content">
+                        {{content}}
+                    </section>
+                </div>
+
+                {{#if author}}
+                <div class="userdetails small-12 medium-3 cell">
+                    {{#if author.image}}
+                    <div class="image" style="background-image: url({{author.image}})"></div>
+                    {{/if}}
+                    <div class="info">
+                        <h4 class="name">{{author.name}}</h4>
+                        {{#if author.website}}
+                        <h3 class="position"><a href="{{author.website}}">{{author.website}}</a>
+                        </h3>
+                        {{/if}} {{#if author.location}}
+                        <h3 class="position"><a href="https://www.google.com/maps/preview#!q={{author.location}}">{{author.location}}</a>
+                        </h3>
+                        {{/if}} {{#if author.bio}}
+                        <p>{{author.bio}}</p>
+                        {{/if}}
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+
+            {{/post}}
+
+        </article>
+
+    </main>
