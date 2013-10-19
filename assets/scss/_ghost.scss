@@ -1,0 +1,60 @@
+body {
+  height: 100%;
+  max-height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blog-title{
+  color: white;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-description{
+  color: white;
+}
+.post-content{
+  display:inline-block;
+}
+
+.post {
+  position: relative;
+  .centered{
+  	padding: 0px 30px 30px 30px;
+  }
+  .post-date {
+    background: transparent url(https://lh3.googleusercontent.com/-DnVQCkPQJE0/Uitv42U0L6I/AAAAAAAAA8A/uYn_-SyKBpU/h120/ribbon-date.png) no-repeat;
+    position: absolute;
+    text-align: center;
+    padding-top: 15px;
+    overflow: hidden;
+    width: 56px;
+    height: 64px;
+    top: -3px;
+    left: 25px;
+    span {
+      color: #fff;
+      font-size: 12px;
+      line-height: 1em;
+      display: block;
+      font-weight: bolder;
+      text-transform: uppercase;
+      .date {
+        color: #c2f3de;
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+.post-template{
+  .profile .blog-logo{
+    max-height: 100px;
+  }
+  .blog-title{
+    font-size: 3rem;
+  }
+  .blog-description{
+    font-size: 1.5rem;
+  }
+} 

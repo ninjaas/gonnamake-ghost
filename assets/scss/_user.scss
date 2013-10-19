@@ -1,0 +1,74 @@
+.profileset{
+  font-family: 'Droid Serif', serif;
+  font-size: 2.0rem;
+  line-height: 1.4em;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 60%;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #fff;
+  background: #303538 no-repeat center center;
+  background-size: cover;
+  border-radius:10px;
+  border-bottom:5px solid #c5cdce;
+  box-shadow:-10px 10px 9px rgba(0, 0, 0, 0.35), -20px 20px 20px  rgba(0,0,0,0.25);
+}
+
+
+.profile .blog-logo{
+  max-width:200px;
+  max-height:200px;
+  border-radius:9999px;
+  margin-top:10px;
+  border:6px solid white;
+  box-shadow: 0px 0px 18px rgba(0, 0, 1, 0.41);
+}
+.userdetails {
+  display:inline-block;
+  -webkit-box-shadow: #999999 2px 2px 10px;
+  -moz-box-shadow: #999999 2px 2px 10px;
+  box-shadow: #999999 2px 2px 10px;
+  margin: 0px auto;
+  a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+    color: #00BBBB;
+    &:active, &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: #666;
+    }
+  }
+  .image {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 300px;
+    background: center center no-repeat;
+    background-size: cover;
+  }
+  .info {
+    padding-bottom: 40px;
+    background: #FAFAFA;
+    text-align: center;
+    .name {
+      text-transform: uppercase;
+      margin: 0px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      color: #5C5B5B;
+      font-size: 30px;
+      padding: 25px 0px 0px 0px;
+    }
+    h3.position {
+      margin: 0px;
+    }
+    p {
+      color: #666;
+    }
+  }
+}

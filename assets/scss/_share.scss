@@ -1,0 +1,74 @@
+/* ---------- SHARE-BUTTON ---------- */
+.share-container a {
+  text-decoration: none;
+}
+
+.share-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.button {
+  border-radius: 8px;
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: -webkit-transform .2s;
+  -moz-transition: -moz-transform .2s;
+  -ms-transition: -ms-transform .2s;
+  -o-transition: -o-transform .2s;
+  transition: all .2s;
+  width: 64px;
+  &:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+.share {
+  background: #444;
+  box-shadow: 0 4px 0 #2a2a2a;
+  width: 304px;
+}
+
+.twitter {
+  background: #00acee;
+  box-shadow: 0 4px 0 #0080b1;
+}
+
+.facebook {
+  background: #4c66a4;
+  box-shadow: 0 4px 0 #3b5998;
+}
+
+.gplus {
+  background: #dd4b39;
+  box-shadow: 0 4px 0 #ce352c;
+}
+
+.btn-share {
+  display: inline-block;
+  position: relative;
+  li {
+    float: left;
+    margin: 0 8px;
+    &:first-child {
+      margin-left: 0;
+      position: absolute;
+    }
+    &:nth-child(2) {
+      margin: 0 8px 0 80px;
+    }
+    &:last-child {
+      margin: 0 0 0 8px
+    }
+  }
+}

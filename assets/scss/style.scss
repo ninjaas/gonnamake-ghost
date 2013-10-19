@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import "share";
+@import "ghost";
+@import "user";
+
+a[class*="entypo-"]:before,
+span[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* CSS Document */
+
+/* ---------- ENTYPO ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+
+/* ---------- Clearfix ---------- */
+.clearfix { *zoom: 1; }
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; 
+}
+.clearfix:after { clear: both; }
+
+.container {
+  height: 64px;
+  left: 50%;
+  margin: -32px 0 0 -152px;
+  position: absolute;
+  top: 50%;
+  width: 304px;
+}
+
