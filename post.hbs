@@ -3,20 +3,23 @@
 <main class="content" role="main">
     <article class="row">
         <div class="row {{post_class}}">
-            <div class=" small-12 medium-9 cell">
+            <div class="small-12 medium-9 cell">
                 {{! Everything inside the #post tags pulls data from the post }} 
                 {{#post}} 
                 {{! Everything below outputs content of the the post which has been published }}
-
                 <h1>{{{title}}}</h1>
                 <span class="post-meta">
                     <time datetime="{{date format=" YYYY-MM-DD "}}">{{date format='DD MMM YYYY'}}</time>{{#if tags}}on {{tags separator=" | "}}{{/if}}</span>
                     <section class="post-content">
                         {{content}}
                     </section>
-                </div>
-
-                {{#if author}}
+                    <section class="comment small-10 cell small-centered">
+                        <div class="g-comments" data-href="{{@blog.url}}{{url}}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</div>
+                        <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
+                        <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a></noscript>
+                    </section>
+            </div>
+            {{#if author}}
                 <div class="userdetails small-12 medium-3 cell">
                     {{#if author.image}}
                     <div class="image" style="background-image: url({{author.image}})"></div>
@@ -34,11 +37,8 @@
                         {{/if}}
                     </div>
                 </div>
-                {{/if}}
-            </div>
-
-            {{/post}}
-
-        </article>
-
-    </main>
+            {{/if}}
+        </div>
+        {{/post}}
+    </article>
+</main>
