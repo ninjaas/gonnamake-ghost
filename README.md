@@ -2,6 +2,9 @@
 
 The goonamake theme for [Ghost](http://github.com/tryghost/ghost/).
 
+## Demo and Used In:
+[Ray's Ghost - iraycd](http://ghost.iraycd.com/)
+
 ## Copyright & License
 
 Copyright (C) 2013 Ninjaas.com - Released under the MIT License.
