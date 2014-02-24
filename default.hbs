@@ -12,9 +12,9 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="/assets/css/gonnamake.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/gonnamake.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
     {{! Ghost outputs important style and meta data with this tag }} 
     {{ghost_head}}
 </head>
@@ -45,7 +45,7 @@
 
     {{! Ghost outputs important scripts and data with this tag }} 
     {{ghost_foot}} {{! The main JavaScript file for Goonamake }}
-    <script type="text/javascript" src="/assets/js/index.js"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 
 </body>
